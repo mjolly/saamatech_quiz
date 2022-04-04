@@ -57,5 +57,6 @@ $ cat record_merger.log
 
 SQL Solution:
 The sql solution has been provided with solutions in the file sql_solution.txt.
+PostgreSQL database was used for the test.
 Note: The question 4 from sql questions is unanswered as I did not understand the question.
 Please use https://sqliteonline.com/ to copy paste the solutions and test them.
