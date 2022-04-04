@@ -1,0 +1,9 @@
+2022-04-02 08:24:15,701,701 data_loader INFO file_data : serious-injury-outcome-indicators-2000-2020-CSV.csv
+2022-04-02 08:24:15,766,766 data_loader INFO start - main
+2022-04-02 08:24:15,766,766 data_loader INFO file_raw : True
+2022-04-02 08:24:15,766,766 data_loader INFO start - load_df
+2022-04-02 08:24:15,771,771 data_loader INFO self.df iterator: <pandas.io.parsers.TextFileReader object at 0x117430f70>
+2022-04-02 08:24:15,771,771 data_loader INFO end - load_df
+2022-04-02 08:24:15,771,771 data_loader INFO start - load_db_table
+2022-04-02 08:24:15,797,797 data_loader INFO end - load_db_table
+2022-04-02 08:24:15,797,797 data_loader INFO end - main
