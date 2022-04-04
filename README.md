@@ -10,7 +10,8 @@
 <p>  $ python main.py -s 'serious-injury-outcome-indicators-2000-2020-CSV.csv' -t 'chunkloader'</p>
 
 <p>log file output: </p>
-<p>  $ cat data_loader.log 2022-04-02 08:50:55,155,155 data_loader INFO file_data : serious-injury-outcome-indicators-2000-2020-CSV.csv 2022-04-02 08:50:55,196,196 data_loader INFO start - main 2022-04-02 08:50:55,196,196 data_loader INFO file_raw : True 2022-04-02 08:50:55,197,197 data_loader INFO start - load_df 2022-04-02 08:50:55,197,197 data_loader INFO self.df iterator: <pandas.io.parsers.TextFileReader object at 0x114b01310> 2022-04-02 08:50:55,204,204 data_loader INFO end - load_df 2022-04-02 08:50:55,204,204 data_loader INFO start - load_db_table 2022-04-02 08:25:06,467,467 data_loader INFO end - load_db_table 2022-04-02 08:25:06,467,467 data_loader INFO end - main</p>
+<p>  $ cat data_loader.log </p>
+<p> 2022-04-02 08:50:55,155,155 data_loader INFO file_data : serious-injury-outcome-indicators-2000-2020-CSV.csv 2022-04-02 08:50:55,196,196 data_loader INFO start - main 2022-04-02 08:50:55,196,196 data_loader INFO file_raw : True 2022-04-02 08:50:55,197,197 data_loader INFO start - load_df 2022-04-02 08:50:55,197,197 data_loader INFO self.df iterator: <pandas.io.parsers.TextFileReader object at 0x114b01310> 2022-04-02 08:50:55,204,204 data_loader INFO end - load_df 2022-04-02 08:50:55,204,204 data_loader INFO start - load_db_table 2022-04-02 08:25:06,467,467 data_loader INFO end - load_db_table 2022-04-02 08:25:06,467,467 data_loader INFO end - main</p>
 
 <p>demo_table data snippet: sample data from demo_table using select query: 
   => select * from demo_table limit 5;  index | Series_reference | Period | Type | Data_value | Lower_CI | Upper_CI | Units | Indicator | Cause | Validation | Population | Age | Severity -------+------------------+---------+----------------+------------------+------------------+------------------+----------+-----------+---------+------------+------------+----------+----------  
@@ -25,8 +26,8 @@
 <p>$ python main.py -s 'records.csv' -t 'recordmerger'</p>
 
 <p>log file output: </p>
- <p> $ cat record_merger.log 
-  2022-04-02 09:23:35,869,869 record_merger INFO file_data : records.csv 2022-04-02 09:23:35,869,869 record_merger INFO start-main 2022-04-02 09:23:35,870,870 record_merger INFO start-csvtolist 2022-04-02 09:23:35,870,870 record_merger INFO self.data:['Equipment ONLY - Saama Technologies', 'Saama Technologies', 'SaamaTech', 'Takeda Pharmaceutical SA - Central Office', '*** DO NOT USE *** Takeda Pharmaceutical', 'Takeda Pharmaceutical', 'Ship to AstraZeneca', 'AstraZeneca', 'AstraZeneca (use AstraZeneca'] 2022-04-02 09:23:35,870,870 record_merger INFO end-csvtolist 2022-04-02 09:23:35,870,870 record_merger INFO start-parselist 2022-04-02 09:23:35,873,873 record_merger INFO result_list : ['Saama Technologies', 'SaamaTech', 'Takeda Pharmaceutical', 'AstraZeneca'] 2022-04-02 09:23:35,873,873 record_merger INFO end-parselist 2022-04-02 09:23:35,873,873 record_merger INFO end-main</p>
+<p> $ cat record_merger.log </p>
+<p>  2022-04-02 09:23:35,869,869 record_merger INFO file_data : records.csv 2022-04-02 09:23:35,869,869 record_merger INFO start-main 2022-04-02 09:23:35,870,870 record_merger INFO start-csvtolist 2022-04-02 09:23:35,870,870 record_merger INFO self.data:['Equipment ONLY - Saama Technologies', 'Saama Technologies', 'SaamaTech', 'Takeda Pharmaceutical SA - Central Office', '*** DO NOT USE *** Takeda Pharmaceutical', 'Takeda Pharmaceutical', 'Ship to AstraZeneca', 'AstraZeneca', 'AstraZeneca (use AstraZeneca'] 2022-04-02 09:23:35,870,870 record_merger INFO end-csvtolist 2022-04-02 09:23:35,870,870 record_merger INFO start-parselist 2022-04-02 09:23:35,873,873 record_merger INFO result_list : ['Saama Technologies', 'SaamaTech', 'Takeda Pharmaceutical', 'AstraZeneca'] 2022-04-02 09:23:35,873,873 record_merger INFO end-parselist 2022-04-02 09:23:35,873,873 record_merger INFO end-main</p>
 
 <p>**SQL Solution:** </p>
 <p>  The sql solution has been provided with solutions in the file sql_solution.txt. </p>
